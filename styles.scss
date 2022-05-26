@@ -1,0 +1,329 @@
+.wrapper_fixed_width {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f0f0f0;
+  width: 1400px;
+}
+
+header {
+  height: 80px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .head_items {
+    display: flex;
+    h1 {
+      img {
+        width: 100px;
+        margin-left: 20px;
+        margin-right: 60px;
+      }
+    }
+    ul {
+      display: flex;
+      li {
+        margin-right: 25px;
+      }
+    }
+  }
+  .contact {
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    width: 200px;
+    height: 80px;
+    background-color: black;
+  }
+}
+
+
+
+main {
+  #mainvisual {
+    // width: 1500px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+#news {
+  padding: 100px 0px;
+  h2 {
+    .en {
+      display: block;
+      font-size: 2.25rem;
+      margin-bottom: 10px;
+    }
+    .ja {
+      display: block;
+      margin-bottom: 30px;
+
+    }
+  }
+  // なんでafterをつけないといけない？
+  // h2の範囲が狭いのは何で？
+  .section_title::after {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+  }
+
+  ul {
+    display: flex;
+    li {
+      margin-right: 45px;
+      time {
+        padding-right: 10px;
+      }
+      span {
+        color: white;
+        background-color: black;
+      }
+      p {
+        padding-top: 15px;
+      }
+    }
+    li::after {
+      display: block;
+      width: 1px;
+      height: 40px;
+      background-color: black;
+    }
+  }
+}
+
+#about {
+  display: flex;
+  padding-bottom: 100px;
+  .about_img {
+    width: 55%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .about_txt {
+    width: 45%;
+    padding: 180px 5% 0 5%;
+    h2 {
+      .en {
+        display: block;
+        font-size: 2.25rem;
+        margin-bottom: 10px;
+      }
+      .ja {
+        display: block;
+        margin-bottom: 30px;
+  
+      }
+    }
+    h2::after {
+      display: block;
+      width: 40px;
+      height: 1px;
+      background-color: black;
+    }
+    p {
+      line-height: 2.2;
+    }
+  }
+}
+
+#business {
+  h2 {
+    .en {
+      display: block;
+      font-size: 2.25rem;
+      margin-bottom: 10px;
+    }
+    .ja {
+      display: block;
+      margin-bottom: 30px;
+
+    }
+  }
+  h2::after {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+  }
+  .business_pic {
+    display: flex;
+    padding: 0px 10%;
+    justify-content: space-between;
+    .business_pic_fst {
+      padding-top: 120px;
+      width: 46%;
+      img {
+        max-width: 100%;
+      }
+    }
+    .business_pic_snd {
+      width: 46%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+#company {
+  padding: 100px 0;
+  display: flex;
+  .company_info {
+    width: 55%;
+    // position: absolute;
+    // left: 0;
+    padding: 100px;
+    background-color: white;
+    h2 {
+      .en {
+        display: block;
+        font-size: 2.25rem;
+        margin-bottom: 10px;
+      }
+      .ja {
+        display: block;
+        margin-bottom: 30px;
+  
+      }
+    }
+    h2::after {
+      display: block;
+      width: 40px;
+      height: 1px;
+      background-color: black;
+    }
+    .company_info_detail {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      dt {
+        font-weight: lighter;
+        width: 20%;
+        margin-top: 10px;
+      }
+      dd {
+        width: 80%;
+        margin-top: 10px;
+      }
+      .add {
+        margin-left: 20%;
+      }
+    }
+  }
+  .company_pic {
+    width: 53%;
+    // position: absolute;
+    // right: 0;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+}
+
+footer {
+  background-color: white;
+  padding: 3% 0;
+  .footer_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+
+header {
+  margin: 0 3%;
+  .head_items {
+    display: block;
+    h1 {
+      img {
+        margin: 8px 0px;
+      }
+    }
+  }
+  .contact {
+    display: none;
+  }
+}
+
+
+
+main {
+}
+
+
+#news {
+  
+}
+
+#about {
+  display: block;
+  .about_img {
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+#business {
+  .business_pic {
+    display: block;
+    padding: 0px 10%;
+    .business_pic_fst {
+      width: 100%;
+      img {
+        padding-bottom: 2%;
+      }
+    }
+    .business_pic_snd {
+      width: 100%;
+      img {
+        padding-bottom: 2%;
+      }
+    }
+  }
+}
+
+#company {
+  padding: 100px 0;
+  display: block;
+  .company_info {
+    width: 100%;
+  }
+  .company_pic {
+    width: 100%;
+  }
+}
+
+footer {
+  .footer_info {
+    display: block;
+    img {
+      padding-bottom: 2%;
+    }
+  }
+}
+
+}
